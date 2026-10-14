@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <title>SIKA - Form Mahasiswa</title>
+    <link rel="stylesheet" href="lthn_html/SIKA_2/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>SIKA</h1>
+        <p>Sistem Informasi Akademik</p>
+    </header>
+
+    <nav aria-label="Navigasi Utama">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="mahasiswa.html">Profil Mahasiswa</a></li>
+            <li><a href="form-mahasiswa.html">From Mahasiswa</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Form Data Mahasiswa</h1>
+
+        <form action="#" method="post">
+            <div>
+                <label for="nim">NIM</label>
+                <input type="text" 
+                        id="nim"
+                        nama="nim"
+                        minlength="8"
+                        maxlength="15"
+                        required>
+            </div>
+            <div>
+                <label for="nama"></label>
+                <input type="text"
+                        id="nama"
+                        name="nama"
+                        minlength="3"
+                        required>
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="prodi">Proram Studi</label>
+                <select name="prodi" id="prodi" required>
+                    <option value="">--Pilih--</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informatika</option>
+                </select>
+            </div>
+            <div>
+                <label for="angkatan">Angkatan</label>
+                <input type="number" name="angkatan" id="angkatan" min="2020" max="2030" required>
+            </div>
+
+            <fieldset>
+                <legend>Status Akademik</legend>
+                <input type="radio" name="status" id="aktif" value="aktif" checked>
+                <label for="aktif">Aktif</label>
+                <input type="radio" name="status" id="nonaktif" value="nonaktif">
+                <label for="nonaktif">Nonaktif</label>    
+            </fieldset>
+
+            <button type="submit">Simpan</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026/2027 SIKA_2</p>
+    </footer>
+</body>
+</html>
